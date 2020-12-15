@@ -106,6 +106,10 @@ class _DSIPageState extends State<DSIPage> {
   ];
   int _counter = 0;
 
+  void _backButton(){
+    runApp(MeuApp());
+  }
+
   void _incrementCounter() {
     setState(() {
       runApp(DSIApp());
@@ -154,9 +158,20 @@ class _DSIPageState extends State<DSIPage> {
       appBar: AppBar(
         title: Row(
           children: <Widget>[
+        ButtonTheme(
+          minWidth: 16.0,
+          height: 30.0,
+          child: RaisedButton(
+            padding: const EdgeInsets.all(8.0),
+            color: Colors.white,
+            onPressed:_backButton,
+            child: Icon(Icons.arrow_back_sharp)
+          )
+        ),
+            Spacer(),
             Text(widget.title),
             Spacer(),
-            Image(image: AssetImage('images/logo/bsi-white.png'), height: 32),
+            Image(image: AssetImage('images/logo/bsi-white.png'), width: 40,height: 32),
           ],
         ),
       ),
