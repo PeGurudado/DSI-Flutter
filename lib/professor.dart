@@ -11,10 +11,11 @@ import 'package:flutter/material.dart';
 /// Pessoa como parâmetro, também podem receber também um Professor.
 class Professor extends Pessoa {
   String matricula;
+  String salario;
 
   //Observe que o construtor de Professor repassa alguns dos parâmetros recebidos
   //para o construtor da super classe (Pessoa).
-  Professor({cpf, nome, endereco, this.matricula})
+  Professor({cpf, nome, endereco, this.matricula, this.salario})
       : super(cpf: cpf, nome: nome, endereco: endereco);
 }
 
@@ -155,8 +156,8 @@ class MaintainProfessorPage extends StatelessWidget {
             validator: (String value) {
               return value.isEmpty ? 'Salário inválida.' : null;
             },
-            initialValue: professor.matricula,
-            onSaved: (newValue) => professor.matricula = newValue,
+            initialValue: professor.salario,
+            onSaved: (newValue) => professor.salario = newValue,
           ),
           Constants.spaceSmallHeight,
           TextFormField(
