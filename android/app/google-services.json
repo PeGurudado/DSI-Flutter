@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "425986955961",
+    "project_id": "dsiapp-6c65e",
+    "storage_bucket": "dsiapp-6c65e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:425986955961:android:de475c92dbd86a7aafd968",
+        "android_client_info": {
+          "package_name": "br.ufrpe.bsi.dsi.dsi_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "425986955961-m2jhq4kmrtdulcal1kse1ifvvafd2nvf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsb625IDfSe6iJCTlTHgNAwTevTVuCbJQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "425986955961-m2jhq4kmrtdulcal1kse1ifvvafd2nvf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
